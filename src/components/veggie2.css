@@ -1,0 +1,20 @@
+.splide__arrow{
+    background-color: white;
+  }
+
+  /* linear-gradient(35deg, #494949, #313131); */
+
+  .splide__arrow {
+    border-radius: 0;
+    height: 4em;
+  }
+
+  .splide__arrow--prev{
+    /* left: 100px; */
+  }
+
+  .splide__pagination__page {
+    background-color: white;
+    height: 15px;
+    width: 15px;
+  }

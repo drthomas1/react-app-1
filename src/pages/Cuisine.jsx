@@ -56,7 +56,7 @@ const Card = styled.div`
     }
     h4 {
         text-align: center;
-        paddind: 1rem;
+        padding: 1rem;
     }
 `;
 

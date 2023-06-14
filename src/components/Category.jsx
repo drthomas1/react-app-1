@@ -1,6 +1,5 @@
 import { FaPizzaSlice, FaHamburger } from 'react-icons/fa';
-import { GiNoodles, GiChopsticks } from 'react-icons/gi';
-import { TbSoup } from 'react-icons/tb';
+import { GiChopsticks, GiIndianPalace, GiTacos } from 'react-icons/gi';
 
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
@@ -16,13 +15,17 @@ function Category() {
             <FaHamburger />
             <h4>American</h4>
         </SLink>
-        <SLink to={'/cuisine/Thai'}>
-            <GiNoodles />
-            <h4>Thaifood</h4>
+        <SLink to={'/cuisine/Mexican'}>
+            <GiTacos />
+            <h4>Mexican</h4>
         </SLink>
-        <SLink to={'/cuisine/Jewish'}>
-            <TbSoup />
-            <h4>Jewish</h4>
+        <SLink to={'/cuisine/Chinese'}>
+            <GiChopsticks />
+            <h4>Chinese</h4>
+        </SLink>
+        <SLink to={'/cuisine/Indian'}>
+            <GiIndianPalace />
+            <h4>Indian</h4>
         </SLink>
     </ List>
   )

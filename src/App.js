@@ -13,6 +13,7 @@ function App() {
           <GiKnifeFork />
           <Logo to={"/"}> deliciousss </Logo>
         </Nav>
+        
         <Search />
         <Category />
         <Pages />
