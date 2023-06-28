@@ -14,7 +14,16 @@
   }
 
   .splide__pagination__page {
-    background-color: white;
-    height: 15px;
-    width: 15px;
+    background: gray;
+    height: 12.5px;
+    width: 12.5px;
+    border: 2px white solid;
   }
+
+  .splide__pagination__page.is-active {
+    
+      background: linear-gradient(to right, #f27121, #e94057);
+  }
+  
+  
+  

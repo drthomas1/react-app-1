@@ -34,6 +34,7 @@ function Category() {
 const List = styled.div`
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 2rem 0rem;
 `;
 
@@ -43,7 +44,6 @@ const SLink = styled(NavLink)`
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-right: 2rem;
     text-decoration: none;
     background: linear-gradient(35deg, #494949, #313131);
     width: 6rem;
@@ -59,7 +59,7 @@ const SLink = styled(NavLink)`
         color: white;
         font-size: 1.5rem;
     }
-    &.active {
+    &.active, :hover {
         background: linear-gradient(to right, #f27121, #e94057);
     }
 `;

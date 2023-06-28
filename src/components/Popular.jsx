@@ -28,6 +28,12 @@ function Popular() {
       }
 
   };
+
+  // var splide = new Splide( '.splide' ).mount();
+
+  //   splide.on( 'resize', function () {
+  //     // do something
+  //   } );
   
   return (
     <div>
@@ -35,11 +41,21 @@ function Popular() {
         <h3>Popular Picks</h3>
         <Splide 
           options={ {
-            perPage: 4,
+            perPage: 3,
             arrows: false,
             pagination: false,
             drag: "free",
             gap: '5rem',
+            breakpoints: {
+              1024: {
+                perPage: 2,
+                gap: '1rem'
+              },
+              480: {
+                perPage: 1,
+                gap: '1rem'
+              }
+            }
           } } 
         >
           {popular.map((recipe) => {
@@ -66,6 +82,7 @@ const Wrapper = styled.div`
 `;
 const Card = styled.div`
   min-height: 25rem;
+  width: 100%;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;

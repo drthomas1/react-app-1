@@ -12,10 +12,10 @@ function Home() {
         exit = {{ opacity: 0 }}
         transition = {{ duration: 0.5 }}
     >
+        <Veggie2 />
         <Popular />
         <Veggie />
         <Dessert />
-        <Veggie2 />
     </motion.div>
   )
 }

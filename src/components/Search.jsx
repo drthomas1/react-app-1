@@ -29,6 +29,10 @@ function Search() {
 
 const FormStyle = styled.form`
     margin: 0rem 20%;
+
+    @media screen and (max-width: 1024px) {
+        margin: 0rem;
+    }
     
     div {
         position: relative;
@@ -43,6 +47,11 @@ const FormStyle = styled.form`
         border-radius: 1rem;
         outline: none;
         width: 100%;
+
+        @media screen and (max-width: 1024px) {
+        font-size: 1rem;
+        }
+        
     }
     svg {
         position: absolute;

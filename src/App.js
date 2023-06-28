@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Nav>
           <GiKnifeFork />
-          <Logo to={"/"}> deliciousss </Logo>
+          <Logo to={"/"}> recipeapp </Logo>
         </Nav>
         
         <Search />
@@ -32,7 +32,7 @@ const Logo = styled(Link)`
 const Nav = styled.div`
   padding: 4rem 0rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   svg{
     font-size: 2rem;
